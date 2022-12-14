@@ -1,0 +1,21 @@
+.taskbar {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 13, 69, 0.893);
+  backdrop-filter: 1px;
+  &__left {
+    // border: 1px solid red;
+    height: 42px;
+    margin-left: 10px;
+    .weather {
+      width: 150px;
+      gap: 5px;
+      img {
+        margin-left: 5px;
+        width: 35px;
+      }
+    }
+  }
+}

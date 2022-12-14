@@ -1,0 +1,30 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-f {
+  display: flex;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.jc-c {
+  justify-items: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+.b-r{
+  border-radius: 5px;
+}
+.hover {
+  &:hover {
+    background-color:rgba(255, 255, 255, 0.112);
+    backdrop-filter: 3px;
+  }
+}
