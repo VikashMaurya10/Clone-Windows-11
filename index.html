@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./dist/style.css">
     <script defer src="./app/js/jquery-3.6.2.min.js"></script>
     <script defer src="./app/js/app.js"></script>
+    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="shortcut icon" href="./app/images/windows-11.svg" type="image/x-icon">
     <title>windows 11</title>
 </head>
@@ -16,14 +18,37 @@
     <main class="d-f">
         <div class="screen"> </div>
         <div class="taskbar d-f ai-c">
-            <div class="taskbar__left hover b-r">
-                <div class="weather d-f ai-c ">
-                    <img src="./app/images/weather2.svg" alt="weather">
-                    <span>22℃ <br>clear</span>
+            <div class="taskbar__left hover d-f b-r">
+                <div class="weather t-icon d-f ai-c">
+                    <img src="./app/images/weather2.svg" alt="">
+                    <div>22℃ <br>Clear</div>
                 </div>
             </div>
-            <div class="taskbar_center"></div>
-            <div class="taskbar__right"></div>
+            <div class="taskbar__center d-f">
+                <div class="w_logo center t-icon hover b-r">
+                    <img src="./app/images/microsoft-windows-11.svg" alt="">
+                </div>
+                <div class="w_logo center t-icon hover b-r">
+                    <img src="./app/images/stwich.jpg" alt="">
+                </div>
+                <div class="w_logo center t-icon hover b-r">
+                    <img src="./app/images/vs-code.png" alt="">
+                    <span></span>
+                </div>
+                <div class="w_logo center t-icon hover b-r">
+                    <img src="./app/images/chrome.png" alt="">
+                    <span></span>
+                </div>
+                <div class="w_logo center t-icon hover b-r">
+                    <img src="./app/images/Explorer.png" alt="">
+                    <span></span>
+                </div>
+            </div>
+            <div class="taskbar__right">
+                <div>
+                    <ion-icon name="chevron-up-outline"></ion-icon>
+                </div>
+            </div>
         </div>
     </main>
 </body>
