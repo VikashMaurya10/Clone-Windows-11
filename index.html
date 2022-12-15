@@ -8,25 +8,22 @@
     <link rel="stylesheet" href="./dist/style.css">
     <script defer src="./app/js/jquery-3.6.2.min.js"></script>
     <script defer src="./app/js/app.js"></script>
-    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="shortcut icon" href="./app/images/windows-11.svg" type="image/x-icon">
     <title>windows 11</title>
 </head>
 
 <body>
     <main class="d-f">
         <div class="screen"> </div>
-        <div class="taskbar d-f ai-c">
+        <div class="taskbar d-f ai-c jc-sb">
             <div class="taskbar__left hover d-f b-r">
                 <div class="weather t-icon d-f ai-c">
                     <img src="./app/images/weather2.svg" alt="">
-                    <div>22℃ <br>Clear</div>
+                    <div>22°C<br>Clear</div>
                 </div>
             </div>
             <div class="taskbar__center d-f">
                 <div class="w_logo center t-icon hover b-r">
-                    <img src="./app/images/microsoft-windows-11.svg" alt="">
+                    <img src="./app/images/windows-11.svg" alt="">
                 </div>
                 <div class="w_logo center t-icon hover b-r">
                     <img src="./app/images/stwich.jpg" alt="">
@@ -44,9 +41,23 @@
                     <span></span>
                 </div>
             </div>
-            <div class="taskbar__right">
-                <div>
-                    <ion-icon name="chevron-up-outline"></ion-icon>
+            <div class="taskbar__right d-f ai-c">
+                <div class="hidden_icon d-f t-icon hover" title="show hidden icons">
+                    <img src="./app/images/up-arrow.svg" alt="">
+                </div>
+                <div class="language center b-r hover">
+                    <span>
+                        ENG<br>US
+                    </span>
+                </div>
+                <div class="wifi t-icon d-f b-r hover">
+                    <img src="./app/images/wifi.svg" alt="">
+                    <img src="./app/images/sound.svg" alt="">
+                    <img src="./app/images/battery-half-outline.svg" alt="">
+                </div>
+                <div class="date_time d-f jc-c b-r hover">
+                    <span class="time"></span>
+                    <span class="date"></span>
                 </div>
             </div>
         </div>

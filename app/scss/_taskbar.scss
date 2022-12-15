@@ -4,8 +4,8 @@
   width: 100%;
   bottom: 0;
   padding: 0 12px;
-  background-color: #1c315e; //rgba(0, 13, 69, 0.893)
-  backdrop-filter: 1px;
+  background-color:rgba(53, 66, 89, 0.977);//#2B3A55// #263159; //#1c315e;
+  backdrop-filter: 10px;
   &__left {
     height: 43px;
     .weather {
@@ -20,19 +20,41 @@
   &__center {
     gap: 3px;
     .w_logo {
-      width: 43px;
-      height: 43px;
+      padding: 9px;
       flex-direction: column;
       gap: 3px;
-      >img{
+      > img {
         border-radius: 2px;
       }
     }
   }
 
-  &__right{
-    >ion-icon{
-      color: white;
+  &__right {
+    height: 50px;
+    text-align: center;
+    img {
+      width: 19px;
+    }
+    .hidden_icon {
+      height: 100%;
+      padding: 0 2px;
+    }
+    .language,
+    .wifi,
+    .date_time {
+      height: 43px;
+      padding: 0 6px;
+    }
+    .language {
+      width: 43px;
+    }
+    .wifi {
+      gap: 4px;
+    }
+    .date_time {
+      align-items: flex-end;
+      width: 78px;
+      flex-direction: column;
     }
   }
 }
