@@ -22,15 +22,19 @@
 .b-r {
   border-radius: 5px;
 }
+.fd-c{
+  flex-direction: column;
+}
 .g-p{
   gap: 5px;
 }
-input{
-  outline: none;
-  border: none;
-  background-color: transparent;
-  @include placeholder-color(white)
+.B-R{
+  border-radius: 10px;
 }
+.G-P{
+ gap: 10px;
+}
+
 
 .hover {
   &:hover {

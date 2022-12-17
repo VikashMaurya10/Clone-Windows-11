@@ -16,3 +16,9 @@ main {
   background: center/cover no-repeat url("../app/images/wallpaper/2.jpg");
   // background: rgba(0, 128, 0, 0.644);
 }
+input, button ,a{
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
