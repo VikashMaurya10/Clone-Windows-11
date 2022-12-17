@@ -1,0 +1,21 @@
+.screen {
+  display: grid;
+  height: 93.5vh;
+  width: 100vw;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  padding-top: 5px;
+}
+
+.d-icon {
+  height: 71px;
+  width: 79px;
+  flex-direction: column;
+  border-radius: 2px;
+  gap: 6px;
+  font-weight: 300;
+  img {
+    height: 62%;
+    width: 59%;
+  }
+}

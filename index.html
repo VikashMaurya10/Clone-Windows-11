@@ -5,25 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/style.css">
     <script defer src="./app/js/jquery-3.6.2.min.js"></script>
+    <link rel="stylesheet" href="./dist/style.css">
     <script defer src="./app/js/app.js"></script>
     <title>windows 11</title>
 </head>
 
 <body>
     <main class="d-f">
-        <div class="screen"> </div>
+        <div class="screen">
+            <div class="d-icon center hover">
+                <img src="./app/images/Computer.png" alt="">
+                <span>This PC</span>
+            </div>
+            <div class="d-icon center hover">
+                <img src="./app/images/Trash Full.png" alt="">
+                <span>Recycle Bin</span>
+            </div>
+            <div class="d-icon center hover">
+                <img src="./app/images/Network.png" alt="">
+                <span>Network</span>
+            </div>
+            <div class="d-icon center hover">
+                <img src="./app/images/Folder Open.png" alt="">
+                <span>Document</span>
+            </div>
+        </div>
         <div class="taskbar d-f ai-c jc-sb">
             <div class="taskbar__left hover d-f b-r">
-                <div class="weather t-icon d-f ai-c">
+                <div class="weather t-icon d-f ai-c g-p" title="22°C Clear">
                     <img src="./app/images/weather2.svg" alt="">
                     <div>22°C<br>Clear</div>
                 </div>
             </div>
-            <div class="taskbar__center d-f">
+            <div class="taskbar__center center g-p">
                 <div class="w_logo center t-icon hover b-r">
                     <img src="./app/images/windows-11.svg" alt="">
+                </div>
+                <div class="search center hover">
+                    <img src="./app/images/seach.svg" alt="">
+                    <input type="text" placeholder="Search">
                 </div>
                 <div class="w_logo center t-icon hover b-r">
                     <img src="./app/images/stwich.jpg" alt="">
@@ -50,7 +71,7 @@
                         ENG<br>US
                     </span>
                 </div>
-                <div class="wifi t-icon d-f b-r hover">
+                <div class="wifi t-icon d-f b-r hover g-p">
                     <img src="./app/images/wifi.svg" alt="">
                     <img src="./app/images/sound.svg" alt="">
                     <img src="./app/images/battery-half-outline.svg" alt="">
@@ -62,6 +83,28 @@
             </div>
         </div>
     </main>
+    <div class="widget b-r">
+        <nav class="nav d-f ai-c jc-sb">
+            <div class="left d-f g-p">
+                <span class="home center b-r">
+                    <img src="./app/images/home.png" alt="">
+                </span>
+                <span class="center hover b-r">
+                    <img src="./app/images/youtube.svg" alt="">
+                </span>
+            </div>
+            <div class="right d-f g-p">
+                <span class="center hover b-r"><img src="./app/images/plus.svg" alt=""></span>
+                <span class="center hover b-r"><img src="./app/images/reload.svg" alt=""></span>
+                <span class="center hover b-r"><img src="./app/images/user.svg" alt=""></span>
+            </span>
+        </nav>
+        <div class="content">
+            <div class="inner">
+                <img src="./app/images/1.png" alt="">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

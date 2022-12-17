@@ -1,16 +1,29 @@
+.t-icon {
+  img {
+    width: 25px;
+  }
+  > span {
+    position: absolute;
+    bottom: 6px;
+    height: 3px;
+    width: 8px;
+    background-color: gray;
+    border-radius: 5px;
+  }
+}
+
 .taskbar {
   position: absolute;
-  height: 50px;
   width: 100%;
   bottom: 0;
   padding: 0 12px;
-  background-color:rgba(53, 66, 89, 0.977);//#2B3A55// #263159; //#1c315e;
-  backdrop-filter: 10px;
+  background-color: rgba(53, 66, 89, 0.6); //#2B3A55// #263159; //#1c315e;
+  backdrop-filter: blur(10px);
+
   &__left {
     height: 43px;
     .weather {
       width: 150px;
-      gap: 5px;
       img {
         margin-left: 7px;
       }
@@ -18,19 +31,34 @@
   }
 
   &__center {
-    gap: 3px;
-    .w_logo {
-      padding: 9px;
+    margin-left: 70px;
+    > .w_logo {
+      height: 40px;
+      width: 39px;
       flex-direction: column;
-      gap: 3px;
       > img {
         border-radius: 2px;
+      }
+    }
+    > .search {
+      height: 32px;
+      padding: 10px 14px;
+      border-radius: 30px;
+      backdrop-filter: 2px;
+      background-color: rgba(128, 128, 128, 0.151);
+      > img {
+        width: 18px;
+        margin-right: 3px;
+      }
+      > input {
+        width: 50px;
+        pointer-events: none;
       }
     }
   }
 
   &__right {
-    height: 50px;
+    height: 49px;
     text-align: center;
     img {
       width: 19px;
@@ -43,13 +71,10 @@
     .wifi,
     .date_time {
       height: 43px;
-      padding: 0 6px;
+      padding: 0 5px;
     }
     .language {
       width: 43px;
-    }
-    .wifi {
-      gap: 4px;
     }
     .date_time {
       align-items: flex-end;
