@@ -1,7 +1,10 @@
+$(document).ready(function () {
+    
+    alert('Use alt key as window key')
+});
 $('body').click(() => {
     $('.widget').removeClass('add-widget');
 });
-
 
 setInterval(() => {
     const date = new Date();
@@ -28,8 +31,9 @@ $('.widget').mouseover(() => {
 }).mouseleave(() => {
     $('.widget').removeClass('add-widget');
 })
+
 $(window).keydown((e) => {
-    if (e.keyCode == 87 && e.altKey) {
+    if (e.key == 'w' && e.altKey) {   /*87*/
         $('.widget').toggleClass('add-widget');
     }
 });
