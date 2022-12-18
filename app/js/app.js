@@ -1,6 +1,6 @@
 $(document).ready(function () {
     
-    alert('Use alt key as window key')
+    alert('Use alt key as windows key')
 });
 $('body').click(() => {
     $('.widget').removeClass('add-widget');
