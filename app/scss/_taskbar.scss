@@ -17,9 +17,10 @@
   width: 100%;
   bottom: 0;
   padding: 0 12px;
-  background-color: rgba(53, 66, 89, 0.6); //#2B3A55// #263159; //#1c315e;
-  backdrop-filter: blur(10px);
-
+  background-color: rgba(53, 66, 89, 0.66); //#2B3A55// #263159; //#1c315e;
+  backdrop-filter: blur(15px);
+  cursor: context-menu;
+  z-index: 2;
   &__left {
     height: 43px;
     .weather {
@@ -53,7 +54,7 @@
       > input {
         width: 50px;
         pointer-events: none;
-        @include placeholder-color(white)
+        @include placeholder-color(white);
       }
     }
   }
