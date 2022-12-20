@@ -7,6 +7,7 @@
   background-color: rgba(255, 255, 255, 0.098);
   backdrop-filter: blur(15px);
   padding: 30px 30px 0 30px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
   transition: all 400ms;
   nav {
     padding-bottom: 10px;
@@ -21,8 +22,8 @@
     .left {
       > .home {
         position: relative;
-        background-color: rgba(83, 83, 83, 0.004);
-        backdrop-filter: blur(10px);
+        background-color: rgba(87, 87, 87, 0.16);
+        backdrop-filter: blur(8px);
         &::before {
           position: absolute;
           content: "";
@@ -93,18 +94,6 @@
   padding: 35px 35px 0 35px;
   cursor: context-menu;
   transition: all 300ms ease-in-out;
-  .search {
-    img {
-      width: 17px;
-    }
-    padding: 0 15px;
-    border-bottom: 3px solid gray;
-    background-color: rgba(20, 20, 20, 0.478);
-    input {
-      height: 35px;
-      @include placeholder-color(white);
-    }
-  }
 
   nav {
     margin: 30px 30px 15px 30px;
@@ -139,7 +128,7 @@
     left: 0;
     height: 65px;
     padding: 0 70px;
-    border-radius:0 0 10px 10px ;
+    border-radius: 0 0 10px 10px;
     background-color: rgba(20, 20, 20, 0.478);
     .left {
       img {
@@ -151,6 +140,42 @@
     }
   }
 }
-.add-start{
+.add-start {
   bottom: 60px;
+}
+
+.search-bar {
+  position: absolute;
+  height: 726px;
+  width: 775px;
+  bottom: 60px; // -730px;
+  left: 40%;
+  transform: translate(-50%, 0);
+  background-color: rgba(49, 49, 49, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 33px 33px 0 33px;
+  .content {
+    border: 1px solid red;
+
+    height: 100%;
+    nav {
+      border: 1px solid red;
+      padding: 10px 0;
+      img {
+        width: 20px;
+      }
+      .right {
+        width: 60%;
+        .reward {
+          span {
+            height: 40px;
+            width: 40px;
+          }
+        }
+      }
+    }
+    .left{
+      
+    }
+  }
 }

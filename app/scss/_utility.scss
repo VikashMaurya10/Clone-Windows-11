@@ -22,24 +22,35 @@
 .b-r {
   border-radius: 5px;
 }
-.fd-c{
+.fd-c {
   flex-direction: column;
 }
-.g-p{
+.g-p {
   gap: 5px;
 }
-.B-R{
+.B-R {
   border-radius: 10px;
 }
-.G-P{
- gap: 10px;
+.G-P {
+  gap: 10px;
 }
-
 
 .hover {
   &:hover {
-    background-color: rgba(255, 255, 255, 0.079) !important;
+    background-color: rgba(255, 255, 255, 0.109) !important;
     backdrop-filter: 2px;
   }
 }
 
+.input {
+  img {
+    width: 17px;
+  }
+  padding: 0 15px;
+  border-bottom: 3px solid gray;
+  background-color: rgba(20, 20, 20, 0.478);
+  input {
+    height: 35px;
+    @include placeholder-color(white);
+  }
+}
