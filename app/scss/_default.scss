@@ -26,3 +26,28 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
+
+
+// mobile view
+.open_desktop {
+  display: none !important;
+}
+@media (max-width: 800px) {
+  body {
+    background-color: gray;
+  }
+  .open_desktop {
+    display: flex !important;
+    height: 100vh;
+    text-transform: capitalize;
+    h1 {
+      text-align: center;
+    }
+  }
+  main {
+    display: none !important;
+  }
+  .d_none {
+    display: none;
+  }
+}

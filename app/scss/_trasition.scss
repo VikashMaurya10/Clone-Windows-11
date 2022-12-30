@@ -93,7 +93,7 @@
   backdrop-filter: blur(20px);
   padding: 35px 35px 0 35px;
   cursor: context-menu;
-  transition: all 300ms ease-in-out;
+  transition: all 250ms ease-in-out;
 
   nav {
     margin: 30px 30px 15px 30px;
@@ -148,23 +148,22 @@
   position: absolute;
   height: 726px;
   width: 775px;
-  bottom: 60px; // -730px;
-  left: 40%;
+  bottom: -730px;
+  left: 50%;
   transform: translate(-50%, 0);
-  background-color: rgba(49, 49, 49, 0.95);
+  background-color: rgba(41, 41, 41, 0.95);
   backdrop-filter: blur(20px);
   padding: 33px 33px 0 33px;
+  transition: all 250ms ease-in-out;
   .content {
-    border: 1px solid red;
-
     height: 100%;
+    cursor: context-menu;
     nav {
-      border: 1px solid red;
-      padding: 10px 0;
+      padding: 5px 0;
       img {
         width: 20px;
       }
-      .right {
+      > .right {
         width: 60%;
         .reward {
           span {
@@ -174,8 +173,67 @@
         }
       }
     }
-    .left{
-      
+    .c-body {
+      font-weight: 200;
+      .left {
+        width: 40%;
+        &__1 {
+          padding: 4px 0 4px 10px;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+      .right2 {
+        width: 59%;
+        > .man2 {
+          img {
+            width: 100%;
+          }
+        }
+        .Scroll,
+        .Scroll2 {
+          position: relative;
+          overflow-y: hidden;
+          overflow-x: scroll;
+          width: 100%;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          img {
+            width: 31.6%;
+          }
+          .img2 {
+            margin: 5px;
+            width: 22%;
+          }
+          .right_btn {
+            margin-right: 33px;
+            right: 0;
+          }
+          button {
+            position: fixed;
+            padding: 10px 4px;
+            background-color: rgba(24, 24, 24, 0.934);
+            img {
+              width: 8px;
+            }
+          }
+        }
+        .games {
+          height: 10.5rem;
+          background-color: rgba(61, 61, 61, 0.934);
+          > .title {
+            font-weight: 500;
+            margin: 6px;
+            font-size: 15px;
+          }
+        }
+      }
     }
   }
+}
+.add-search-bar {
+  bottom: 60px;
 }
