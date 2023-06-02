@@ -131,12 +131,17 @@
     border-radius: 0 0 10px 10px;
     background-color: rgba(20, 20, 20, 0.478);
     .left {
+      padding: 4px 6px;
       img {
-        width: 40px;
+        width: 32px;
       }
     }
-    img {
-      width: 20px;
+    .log{
+      padding: 9px 11px;
+      img {
+        width: 20px;
+      }
+
     }
   }
 }
